@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 // Rota para página inicial
 app.get('/', (req, res) => {
-  res.sender('../app/view/home');
+  res.render('../app/view/home');
 });
 
 app.listen(8080, () => {
